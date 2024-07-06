@@ -114,7 +114,7 @@
             <a href="#" class="fs-6 text-decoration-none text-white fw-semibold mx-3 my-1">Términos y condiciones</a>
             <a href="#" class="fs-6 text-decoration-none text-white fw-semibold mx-3 my-1">Preguntas frecuentas</a>
             <a href="#" class="fs-6 text-decoration-none text-white fw-semibold mx-3 my-1">Ayuda</a>
-            <a href="#" class="fs-6 text-decoration-none text-white fw-semibold mx-3 my-1 rounded-2"
+            <a href="html/abm-peliculas.jsp" class="fs-6 text-decoration-none text-white fw-semibold mx-3 my-1 rounded-2"
                 id="boton-abm-peli">Administrador Películas</a>
         </div>
     </footer>

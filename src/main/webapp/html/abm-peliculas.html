@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAC Movies | Home</title>
+    <link rel="icon" href="pelicula.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/abm.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/917ede469a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="">
+        <nav class="navbar fw-semibold">
+            <div class="container-fluid justify-content-center justify-content-md-between flex-column flex-md-row">
+                <div class="pb-2 p-md-0 d-flex align-items-center">
+                    <i class="fa-solid fa-film me-2" style="color: #ffffff;"></i>
+                    <a class="navbar-brand text-white" href="../index.html">CAC-Movies</a>
+                </div>
+                <div>
+                    <a class="nav-item nav-link d-inline px-md-4 py-md-2 mx-2" href="../index.html">Tendencias</a>
+                    <a class="nav-item nav-link d-inline px-md-4 py-md-2 mx-2" href="registro.html">Registrarse</a>
+                    <a class="nav-item nav-link d-inline px-md-4 py-md-2 mx-2" href="login.html" id="login-btn">Iniciar
+                        Sesión</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="creacion-pelicula" class="m-2 d-flex justify-content-center">
+        <div id="" class="form container text-center text-lg-start rounded-2 m-0 d-flex justify-content-center p-5">
+            <div class="w-50">
+                <h1 class="text-center">Añadir Película</h1>
+                <form action="" method="post" class="d-flex flex-column align-items-center">
+                    <input type="text" name="titulo" id="titulo" class="form-control rounded" placeholder="Titulo" required>
+                    <input type="date" name="fechaDeEstreno" id="fechaDeEstreno" class="form-control rounded" required>
+                    <input type="text" name="categorias" id="categorias" class="form-control rounded" placeholder="Categorias" required>
+                    <input type="number" name="duracion" id="duracion" class="form-control rounded" placeholder="Duracion en minutos" required>
+                    <input type="text" name="sinopsis" id="sinopsis" class="form-control rounded" placeholder="Sinopsis" required>
+                    <input type="text" name="director" id="director" class="form-control rounded" placeholder="Director" required>
+                    <input type="text" name="portada" id="portada" class="form-control rounded" placeholder="Link a la imagen de portada" required>
+                    <input type="text" name="fondo" id="fondo" class="form-control rounded" placeholder="Link a la imagen de fondo" required>
+                    <select name="estado" id="estado" class="form-select rounded" required>
+                        <option value="" selected disabled hidden>Estado</option>
+                        <option value="" >Released</option>
+                        <option value="" >Cancelled</option>
+                        <option value="" >Announced</option>
+                        <option value="" >Upcoming</option>
+                    </select>
+                    <input type="text" name="lenguajeOriginal" id="lenguajeOriginal" class="form-control rounded" placeholder="Lenguaje original" required>
+                    <input type="number" name="presupuesto" id="presupuesto" class="form-control rounded" placeholder="Presupuesto">
+                    <input type="number" name="ingresos" id="ingresos" class="form-control rounded" placeholder="Ingresos">
+                    <input type="text" name="trailer" id="trailer" class="form-control rounded" placeholder="Link al trailer de la película" required>
+                    <div class="container-fluid d-flex flex-column justify-content-center align align-items-center">
+                        <button type="submit" class="boton-prim btn rounded-3 w-100" id="crear-pelicula">Añadir</button>
+                        <a href="../index.html" class="btn-secondary mt-4">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="d-flex justify-content-center ">
+        <hr class="w-75">
+    </div>
+    <section id="peliculas" class="">
+        <div class="ms-5 me-5 mt-2 mb-4">
+            <table class="table table-striped table-dark">
+            <thead>
+                <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Titulo</th>
+                <th scope="col">Fecha de estreno</th>
+                <th scope="col">Categorias</th>
+                <th scope="col">Duracion</th>
+                <th scope="col">Sinopsis</th>
+                <th scope="col">Director/es</th>
+                <th scope="col">Link Portada</th>
+                <th scope="col">Link Fondo</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Lenguaje original</th>
+                <th scope="col">Presupuesto</th>
+                <th scope="col">Ingresos</th>
+                <th scope="col">Link Trailer</th>
+                <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                </tr>
+                <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                </tr>
+                <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+                </tr>
+            </tbody>
+            </table>    
+        </div>
+    </section>
+    <footer>
+        <div id="footer"
+            class="container-fluid d-flex justify-content-center align-items-center flex-column flex-md-row">
+            <a href="html/clima.html" class="fs-6 text-decoration-none text-white fw-semibold mx-3 my-1">Clima</a>
+            <a href="#" class="fs-6 text-decoration-none text-white fw-semibold mx-3 my-1">Términos y condiciones</a>
+            <a href="#" class="fs-6 text-decoration-none text-white fw-semibold mx-3 my-1">Preguntas frecuentas</a>
+            <a href="#" class="fs-6 text-decoration-none text-white fw-semibold mx-3 my-1">Ayuda</a>
+            <a href="html/abm-peliculas.html" class="fs-6 text-decoration-none text-white fw-semibold mx-3 my-1 rounded-2"
+                id="boton-abm-peli">Administrador Películas</a>
+        </div>
+    </footer>
+    <a href="#" id="volver-arriba"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

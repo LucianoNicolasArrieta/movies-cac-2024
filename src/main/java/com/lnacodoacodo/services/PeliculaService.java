@@ -37,8 +37,8 @@ public class PeliculaService {
           rs.getString("fondo"),
           rs.getString("estado"),
           rs.getString("lenguaje_original"),
-          rs.getDouble("presupuesto"),
-          rs.getDouble("ingresos"),
+          rs.getString("presupuesto"),
+          rs.getString("ingresos"),
           rs.getString("trailer"),
           rs.getBoolean("aclamada"));
 
@@ -74,8 +74,8 @@ public class PeliculaService {
           rs.getString("fondo"),
           rs.getString("estado"),
           rs.getString("lenguaje_original"),
-          rs.getDouble("presupuesto"),
-          rs.getDouble("ingresos"),
+          rs.getString("presupuesto"),
+          rs.getString("ingresos"),
           rs.getString("trailer"),
           rs.getBoolean("aclamada"));
     }
@@ -130,8 +130,8 @@ public class PeliculaService {
           rs.getString("fondo"),
           rs.getString("estado"),
           rs.getString("lenguaje_original"),
-          rs.getDouble("presupuesto"),
-          rs.getDouble("ingresos"),
+          rs.getString("presupuesto"),
+          rs.getString("ingresos"),
           rs.getString("trailer"),
           rs.getBoolean("aclamada"));
 
@@ -165,8 +165,8 @@ public class PeliculaService {
           rs.getString("fondo"),
           rs.getString("estado"),
           rs.getString("lenguaje_original"),
-          rs.getDouble("presupuesto"),
-          rs.getDouble("ingresos"),
+          rs.getString("presupuesto"),
+          rs.getString("ingresos"),
           rs.getString("trailer"),
           rs.getBoolean("aclamada"));
 

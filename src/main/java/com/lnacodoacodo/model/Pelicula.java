@@ -12,15 +12,15 @@ public class Pelicula {
   private String fondo; // Path a la imagen del fondo
   private String estado; // Estado de la película
   private String lenguajeOriginal;
-  private double presupuesto; // Presupuesto en la moneda que uses
-  private double ingresos; // Ingresos en la moneda que uses
+  private String presupuesto; // Presupuesto en la moneda que uses
+  private String ingresos; // Ingresos en la moneda que uses
   private String trailer;
   private Boolean aclamada;
 
   // Constructor
   public Pelicula(int id, String titulo, String fechaDeEstreno, String categorias, int duracion,
                   String sinopsis, String director, String portada, String fondo, String estado,
-                  String lenguajeOriginal, double presupuesto, double ingresos, String trailer, Boolean aclamada) {
+                  String lenguajeOriginal, String presupuesto, String ingresos, String trailer, Boolean aclamada) {
     this.id = id;
     this.titulo = titulo;
     this.fechaDeEstreno = fechaDeEstreno;
@@ -127,15 +127,15 @@ public class Pelicula {
     this.lenguajeOriginal = lenguajeOriginal;
   }
 
-  public double getPresupuesto() {
+  public String getPresupuesto() {
     return presupuesto;
   }
 
-  public void setPresupuesto(double presupuesto) {
+  public void setPresupuesto(String presupuesto) {
     this.presupuesto = presupuesto;
   }
 
-  public double getIngresos() {
+  public String getIngresos() {
     return ingresos;
   }
 
@@ -155,7 +155,7 @@ public class Pelicula {
     this.aclamada = aclamada;
   }
 
-  public void setIngresos(double ingresos) {
+  public void setIngresos(String ingresos) {
     this.ingresos = ingresos;
   }
 
