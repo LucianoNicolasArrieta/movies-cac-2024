@@ -1,4 +1,5 @@
-package com.lnacodoacodo.model;
+package com.lna.peliculas.cac.model;
+
 
 public class Pelicula {
   private int id;
@@ -22,6 +23,25 @@ public class Pelicula {
                   String sinopsis, String director, String portada, String fondo, String estado,
                   String lenguajeOriginal, String presupuesto, String ingresos, String trailer, Boolean aclamada) {
     this.id = id;
+    this.titulo = titulo;
+    this.fechaDeEstreno = fechaDeEstreno;
+    this.categorias = categorias;
+    this.duracion = duracion;
+    this.sinopsis = sinopsis;
+    this.director = director;
+    this.portada = portada;
+    this.fondo = fondo;
+    this.estado = estado;
+    this.lenguajeOriginal = lenguajeOriginal;
+    this.presupuesto = presupuesto;
+    this.ingresos = ingresos;
+    this.trailer = trailer;
+    this.aclamada = aclamada;
+  }
+  
+    public Pelicula(String titulo, String fechaDeEstreno, String categorias, int duracion,
+                  String sinopsis, String director, String portada, String fondo, String estado,
+                  String lenguajeOriginal, String presupuesto, String ingresos, String trailer, Boolean aclamada) {
     this.titulo = titulo;
     this.fechaDeEstreno = fechaDeEstreno;
     this.categorias = categorias;

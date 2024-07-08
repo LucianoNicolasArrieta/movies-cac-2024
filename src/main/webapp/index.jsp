@@ -1,9 +1,9 @@
-<%@ page import="com.lnacodoacodo.db.Conexion" %>
+<%@ page import="com.lna.peliculas.cac.db.Conexion" %>
 <%@ page import="java.sql.Connection" %>
-<%@ page import="com.lnacodoacodo.services.PeliculaService" %>
+<%@ page import="com.lna.peliculas.cac.services.PeliculaService" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.lnacodoacodo.model.Pelicula" %>
+<%@ page import="com.lna.peliculas.cac.model.Pelicula" %>
 <%@ page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">

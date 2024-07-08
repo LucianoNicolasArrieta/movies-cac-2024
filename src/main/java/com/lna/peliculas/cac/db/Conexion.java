@@ -1,4 +1,4 @@
-package com.lnacodoacodo.db;
+package com.lna.peliculas.cac.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

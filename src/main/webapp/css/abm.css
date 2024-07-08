@@ -61,6 +61,11 @@ tr th {
     color: var(--color-primario) !important;
 }
 
+.modal-content {
+    background-color: var(--color-form) !important;
+    color: var(--color-primario) !important;
+}
+
 @media (min-width: 992px) {
     .form {
         margin: 0 35vw;
